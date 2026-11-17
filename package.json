@@ -1,15 +1,19 @@
 {
+    "homepage": "https://Devashishpatel002-droid.github.io/desktop-tutorial",
   "name": "mr1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.5"

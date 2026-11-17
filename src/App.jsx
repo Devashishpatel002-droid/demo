@@ -1,14 +1,14 @@
 import './App.css';
 import Navbar from './Navbar';
 import Textforn from './Textforn';
-import About from './About';
+// import About from './About';
 import React, { useState } from 'react';
 import Alert from './Alert';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom';
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route
+// } from 'react-router-dom';
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -52,7 +52,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar
           title="TextUtils"
           mode={mode}
@@ -64,22 +64,23 @@ function App() {
         <Alert alert={alert} />
 
         <div className="container my-3">
-          <Routes>
-            <Route exact path="/about" element={<About />} />
+           {/* <Routes> */}
+            {/* <Route exact path="/about" element={<About />} /> */}
 
-            <Route
+            {/* <Route
               exact path="/"
-              element={
+              element={ */}
                 <Textforn
                   showAlert={showAlert}
                   heading="Enter the text to analyze below"
-                  mode={mode}
-                />
-              }
+                  mode={mode}/>
+                
+              {/* }
             />
           </Routes>
-        </div>
-      </Router>
+       
+      </Router>  */}
+       </div>
     </>
   );
 }
